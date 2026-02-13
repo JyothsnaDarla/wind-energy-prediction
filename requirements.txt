@@ -49,6 +49,7 @@ groq==0.32.0
 grpc-stubs==1.53.0.6
 grpcio==1.75.1
 gTTS==2.5.4
+gunicorn==25.0.3
 h11==0.16.0
 httpcore==1.0.9
 httplib2==0.31.0
