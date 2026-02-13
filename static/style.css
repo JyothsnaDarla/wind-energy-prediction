@@ -1,0 +1,140 @@
+/* -------------------- BODY -------------------- */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #e6c99c;   /* Light Beige */
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+    background-color: #6b3f2b;  /* Brown */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* -------------------- HOME PAGE -------------------- */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;            /* more space between image & content */
+    padding: 80px;
+    min-height: 85vh;
+}
+
+.home-left img {
+    width: 500px;          /* increased image size */
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.home-right {
+    width: 50%;
+    font-size: 20px;       /* increased text size */
+    line-height: 1.8;
+}
+
+.home-right p {
+    margin-bottom: 20px;
+}
+
+/* -------------------- HOME PAGE -------------------- */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px;
+    min-height: 80vh;
+}
+
+.home-left img {
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.home-right {
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* -------------------- MAIN PAGE -------------------- */
+.main-container {
+    display: flex;
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* center vertically */
+    gap: 80px;                   /* space between sections */
+    min-height: 80vh;            /* vertical center */
+    padding: 40px;
+}
+
+/* LEFT & RIGHT CARDS */
+.left-section,
+.right-section {
+    width: 40%;
+    background: #f5e2c8;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* -------------------- INPUTS -------------------- */
+.input-box {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* -------------------- BUTTON -------------------- */
+.btn-primary {
+    background-color: #6b3f2b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4a2a1c;
+    transform: scale(1.05);
+}
+
+/* -------------------- WEATHER OUTPUT -------------------- */
+.weather-output {
+    margin-top: 25px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+@media (max-width: 900px) {
+
+    .main-container,
+    .home-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left-section,
+    .right-section,
+    .home-right {
+        width: 80%;
+    }
+}

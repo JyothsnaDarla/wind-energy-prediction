@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wind Energy Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        Wind Turbine Energy Prediction Based on Weather Conditions
+    </header>
+
+    <section class="home-container">
+
+        <div class="home-left">
+            <img src="{{ url_for('static', filename='wind.png') }}" alt="Wind Turbine">
+        </div>
+
+        <div class="home-right">
+            <p>
+                Renewable energy, such as wind and solar energy, plays an increasing role in the supply of energy worldwide.
+                Wind energy is a key player in renewable energy production.
+            </p>
+
+            <p>
+                However, levels of production of wind energy are hard to predict as they rely on weather conditions.
+                Wind speed is crucial for energy production and varies over time.
+            </p>
+
+            <a href="/windpage">
+                <button class="btn-primary">WANT TO PREDICT THE ENERGY??</button>
+            </a>
+        </div>
+
+    </section>
+
+</body>
+</html>

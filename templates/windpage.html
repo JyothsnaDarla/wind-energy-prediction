@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wind Energy Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        Wind Turbine Energy Prediction Based on Weather Conditions
+    </header>
+
+    <section class="main-container">
+
+        <!-- LEFT SIDE -->
+        <div class="left-section">
+
+    <h3>Give your city name to know the weather conditions..</h3>
+
+    <form method="POST" action="/weather">
+        
+        <input type="text" name="city" 
+               placeholder="Enter City Name"
+               class="input-box" required>
+
+        <br><br>
+
+        <button class="btn-primary">
+            CHECK THE WEATHER CONDITIONS
+        </button>
+
+    </form>
+
+    <div class="weather-output">
+        <h3><p><strong>The weather conditions of the city  : </strong>{{city}}</p></h3>
+        <p><strong>Temperature :</strong> {{ temperature }} °C</p>
+        <p><strong>Humidity :</strong> {{ humidity }} %</p>
+        <p><strong>Pressure :</strong> {{ pressure }} mmHG</p>
+        <p><strong>Wind Speed :</strong> {{ wind_speed }} m/s</p>
+
+    </div>
+
+</div>
+
+
+        <!-- RIGHT SIDE -->
+       <div class="right-section">
+
+    <h2>Predict the Wind Energy!!</h2>
+
+    <form method="POST" action="/predict">
+
+        <input type="text" name="theoretical_power"
+               placeholder="Theoretical Power in KWh"
+               class="input-box" required>
+
+        <input type="text" name="wind_speed"
+               placeholder="Wind Speed in m/s"
+               class="input-box" required>
+
+        <br><br>
+
+        <button class="btn-primary">PREDICT</button>
+
+    </form>
+
+    {% if prediction %}
+    <div class="weather-output">
+        <h3>Predicted Energy:</h3>
+        <p><strong>{{ prediction }}</strong> kWh</p>
+    </div>
+    {% endif %}
+
+</div>
+
+
+    </section>
+
+</body>
+</html>
