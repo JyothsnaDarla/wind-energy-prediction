@@ -2,8 +2,11 @@
 
 ##  Live Application
 
-🚀 Live Demo:  
+🚀 Live Server Link:  
 👉 https://wind-energy-prediction-j78f.onrender.com/
+
+Demo:-
+https://drive.google.com/file/d/192qpFOlwITUYQPk47EPFNYX6Vtt6wGnz/view?usp=drive_link
 
 ---
 
