@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 import pandas as pd
 import requests
-
+import os
 app = Flask(__name__)
 
 # Load trained Random Forest model
@@ -25,7 +25,7 @@ def windpage():
 def weather():
     city = request.form['city']
 
-    API_KEY = "91e09a1b1f9542e687990234261202"
+    API_KEY = os.environ.get("WEATHER_API_KEY")
     url = f"http://api.weatherapi.com/v1/current.json?key={API_KEY}&q={city}"
 
     response = requests.get(url)
@@ -61,7 +61,7 @@ def predict():
                            prediction=round(prediction[0],2))
 
 
-import os
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
