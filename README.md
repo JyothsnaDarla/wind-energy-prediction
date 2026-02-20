@@ -6,7 +6,7 @@
 👉 https://wind-energy-prediction-j78f.onrender.com/
 
 Demo:-
-https://drive.google.com/file/d/192qpFOlwITUYQPk47EPFNYX6Vtt6wGnz/view?usp=drive_link
+https://drive.google.com/file/d/1LnABAHGvCPW6bHKQNRZgh2POOIMsVd0j/view?usp=drive_link
 
 ---
 
